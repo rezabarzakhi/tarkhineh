@@ -1,0 +1,90 @@
+.mainAbout {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    linear-gradient(0deg, rgba(33, 64, 43, 0.5), rgba(33, 64, 43, 0.5)), url(/public/images/mainAbout.jpg);
+  background-position: center;
+  padding: 48px 108px;
+}
+
+.mainAbout-summery {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 16px;
+}
+.mainAbout-summery-title {
+  color: var(--white);
+}
+
+.mainAbout-summery-body {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 180%;
+  text-align: justify;
+  color: var(--white);
+}
+.mainAbout-summery-btn {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid var(--white);
+  border-radius: 4px;
+  background-color: transparent;
+  color: var(--white);
+  padding: 0.5rem 2.7rem;
+}
+
+.mainAbout-feautres {
+  margin-top: 2rem;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 30%;
+  /* justify-content: space-around; */
+  align-items: baseline;
+  /* padding: 3rem; */
+}
+.mainAbout-feautres-item {
+  margin-top: 2rem;
+  flex: 40%;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mainAbout-feautres-item-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 4px;
+}
+.mainAbout-feautres-item-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 180%;
+  text-align: center;
+}
+@media screen and (max-width: 1024px) {
+  .mainAbout {
+    padding: 48px 54px;
+  }
+  .mainAbout-feautres {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .mainAbout {
+    flex-direction: column;
+  }
+  .mainAbout-summery{
+    width: 100%;
+  }
+   .mainAbout-feautres {
+    width: 100%;
+  }
+}

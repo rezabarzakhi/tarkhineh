@@ -1,0 +1,22 @@
+.desktop-navbar {
+    display: flex;
+}
+.desktop-navbar-link {
+    margin-right: 2.4rem;
+    color: var(--gray-7);
+}
+
+.desktop-navbar-link.active {
+      font-weight: 700;
+      color: var(--primery);
+}
+
+@media screen and (max-width: 1024px) {
+    .desktop-navbar-link {
+        margin-right: 1.2rem;
+    }
+    .desktop-navbar-link.text-bodyXL {
+        font-size: 16px !important;
+    }
+    
+}

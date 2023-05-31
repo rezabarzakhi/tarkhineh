@@ -1,0 +1,83 @@
+.MainResturantMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.MainResturantMenu h2 {
+  margin-bottom: 4rem;
+}
+.MainResturantMenu-menu {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10rem;
+  margin-bottom: 4.8rem;
+}
+
+.MainResturantMenu-menu-item {
+  flex: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  margin-bottom: 3rem;
+}
+.MainResturantMenu-img {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  translate: 0 -50%;
+}
+.MainResturantMenu-btn {
+  padding: 1rem 2rem;
+  position: relative;
+  background-color: var(--primery);
+  border: none;
+  border-radius: 8px;
+  font-family: "Estedad-VF";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 180%;
+  color: var(--white);
+  translate: 0 -170%;
+}
+
+.MainResturantMenu-menu2 {
+  position: absolute;
+  border: 1px solid var(--primery);
+  border-radius: 8px;
+  width: 20%;
+  height: 120px;
+  padding: 8px;
+  z-index: -100;
+}
+@media screen and (max-width: 1024px) {
+  .MainResturantMenu-menu-item {
+    flex: 50%;
+  }
+  .MainResturantMenu-menu2 {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .MainResturantMenu-menu-item {
+    /* flex: 25%; */
+  }
+  .MainResturantMenu-img {
+    width: 100px;
+    height: 100px;
+  }
+  .MainResturantMenu-menu2 {
+    width: 40%;
+    height: 80px;
+  }
+  .MainResturantMenu-btn {
+    font-size: 14px;
+    padding: 0.5rem 2rem;
+      translate: 0 -60%;
+  }
+}
