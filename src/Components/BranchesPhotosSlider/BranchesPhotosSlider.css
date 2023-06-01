@@ -1,0 +1,72 @@
+.BranchesPhotosSlider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.swiper-wrapper {
+  width: 800px;
+  height: 400px;
+}
+.BranchesPhotosSlider-photos {
+  position: absolute;
+  border-radius: 8px;
+}
+.BranchesPhotosSlider-photos img {
+  width: 100%;
+  height: 100%;
+}
+.BranchesPhotosSlider-tumbs {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: flex-end; */
+  /* position: relative; */
+  /* top: 75%; */
+}
+
+.BranchesPhotosSlider-tumbs .swiper-wrapper {
+  display: flex;
+  justify-content: center;
+  /* align-items: flex-end; */
+  height: 100px;
+}
+.BranchesPhotosSlider-tumbs .swiper-slide {
+  width: 80px !important;
+  margin: 1rem;
+}
+.BranchesPhotosSlider-tumbs img {
+  border-radius: 4px;
+  width: 80px;
+  height: 80px;
+}
+.BranchesPhotosSlider-tumbs img:hover {
+  border: 1px solid #fff;
+}
+.BranchesPhotosSlider-close {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  width: 30px;
+  height: 30px;
+  color: var(--white);
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+@media screen and (max-width: 480px) {
+  .swiper-wrapper {
+    width: 350px;
+    height: 350px;
+  }
+  .BranchesPhotosSlider-tumbs img {
+    border-radius: 4px;
+    width: 50px;
+    height: 50px;
+  }
+  .BranchesPhotosSlider-tumbs .swiper-slide {
+    width: 50px !important;
+    margin: 0.5rem;
+  }
+}
