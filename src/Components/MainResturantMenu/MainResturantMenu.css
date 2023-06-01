@@ -67,8 +67,9 @@
   .MainResturantMenu h2 {
   margin-bottom: 2rem;
 }
-.MainResturantMenu-menu {
+.MainResturantMenu-menu ,.MainResturantMenu{
   margin-top: 2rem;
+  margin-bottom: 1rem;
 }
   .MainResturantMenu-menu-item {
     /* flex: 25%; */
