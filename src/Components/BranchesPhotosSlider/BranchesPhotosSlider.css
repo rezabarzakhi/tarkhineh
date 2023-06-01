@@ -55,9 +55,9 @@
   padding: 0.5rem;
   border-radius: 50%;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1024px) {
   .swiper-wrapper {
-    width: 350px;
+    width: 450px;
     height: 350px;
   }
   .BranchesPhotosSlider-tumbs img {
@@ -69,4 +69,6 @@
     width: 50px !important;
     margin: 0.5rem;
   }
+}
+@media screen and (max-width: 480px) {
 }

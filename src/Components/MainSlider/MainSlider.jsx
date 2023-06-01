@@ -11,7 +11,7 @@ import "./MainSlider.css";
 export default function MainSlider() {
   SwiperCore.use([Autoplay]);
   return (
-    <div>
+    <div className="MainSlider">
       <Swiper
         // install Swiper modules
         modules={[Navigation, Pagination, Scrollbar, A11y]}

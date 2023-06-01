@@ -130,6 +130,9 @@
     height: 100px;
     transition: all 0.5s;
   }
+  .overlayBGC {
+    /* padding: 10rem ; */
+  }
 }
 @media screen and (max-width: 480px) {
   .MainResturantBranches-cards {

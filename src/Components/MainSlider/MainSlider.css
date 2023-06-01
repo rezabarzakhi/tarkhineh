@@ -5,6 +5,9 @@
   justify-content: center;
   align-items: center;
 }
+.MainSlider .swiper-wrapper {
+  height: 336px !important;
+}
 .slider-img {
   width: 100%;
   height: 336px;
@@ -52,6 +55,9 @@
     font-size: 3rem !important;
   }
 
+  .MainSlider .swiper-wrapper {
+  height: 250px !important;
+}
   /* .slider-img-filter {
     height: 250px;
   } */
@@ -62,6 +68,9 @@
   .slider-img-filter {
     height: 176px;
   }
+    .MainSlider .swiper-wrapper {
+  height: 176px !important;
+}
   .slider-title {
     font-size: 1.6rem !important;
   }
@@ -71,7 +80,7 @@
   }
   .swiper-pagination {
     background: url(/src/assets/Rectangle\ 2.png);
-background-size: 85px 20px;
+    background-size: 85px 20px;
     width: 85px !important;
     height: 20px;
   }
