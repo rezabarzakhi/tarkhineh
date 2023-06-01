@@ -33,4 +33,55 @@ let MainMenu = [
   },
 ];
 
-export { MainSlide , MainMenu};
+let Branches = [
+  {
+    id: 1,
+    title: "اکباتان",
+    adress: "شهرک اکباتان، فاز ۳، مجتمع تجاری کوروش، طبقه سوم",
+    images: [
+      "/images/branches/ekbatan/ekbatan (1).jpg",
+      "/images/branches/ekbatan/ekbatan (2).jpg",
+      "/images/branches/ekbatan/ekbatan (3).jpg",
+      "/images/branches/ekbatan/ekbatan (4).jpg",
+      "/images/branches/ekbatan/ekbatan (5).jpg",
+    ],
+  },
+  {
+    id: 2,
+    title: "چالوس",
+    adress: "چالوس، خیابان ۱۷ شهریور، بعد کوچه کوروش، جنب داروخانه دکتر میلانی",
+    images: [
+      "/images/branches/chalous/chalous (1).jpg",
+      "/images/branches/chalous/chalous (2).jpg",
+      "/images/branches/chalous/chalous (3).jpg",
+      "/images/branches/chalous/chalous (4).jpg",
+      "/images/branches/chalous/chalous (5).jpg",
+    ],
+  },
+  {
+    id: 3,
+    title: "اقدسیه",
+    adress: "خیابان اقدسیه ، نرسیده به میدان خیام، پلاک ۸",
+    images: [
+      "/images/branches/aghdasieh/aghdasieh (1).jpg",
+      "/images/branches/aghdasieh/aghdasieh (2).jpg",
+      "/images/branches/aghdasieh/aghdasieh (3).jpg",
+      "/images/branches/aghdasieh/aghdasieh (4).jpg",
+      "/images/branches/aghdasieh/aghdasieh (5).jpg",
+    ],
+  },
+  {
+    id: 4,
+    title: "ونک",
+    adress: "میدان ونک، خیابان فردوسی، نبش کوچه نیلوفر، پلاک ۲۶",
+    images: [
+      "/images/branches/vanak/vanak (1).jpg",
+      "/images/branches/vanak/vanak (2).jpg",
+      "/images/branches/vanak/vanak (3).jpg",
+      "/images/branches/vanak/vanak (4).jpg",
+      "/images/branches/vanak/vanak (5).jpg",
+    ],
+  },
+];
+
+export { MainSlide, Branches, MainMenu,  };

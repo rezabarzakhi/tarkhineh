@@ -1,0 +1,155 @@
+.MainResturantBranches {
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.MainResturantBranches-cards {
+  display: flex;
+  justify-content: center;
+}
+.MainResturantBranches-card {
+  transition: all 0.5s;
+  width: 25%;
+  margin: 2.4rem;
+  border-radius: 8px;
+  border: 1px solid var(--gray-4);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.MainResturantBranches-card-top {
+  width: 100%;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+.MainResturantBranches-card-img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+.MainResturantBranches-card-img-icon {
+  position: absolute;
+  z-index: 999999999;
+  width: 20px;
+  height: 20px;
+  padding: 1.2rem;
+  background: radial-gradient(farthest-side, rgba(255, 255, 255, 0.6) 60%, rgba(255, 255, 255, 0.3) 61%);
+  border-radius: 50%;
+  visibility: hidden;
+}
+
+.MainResturantBranches-card-info {
+  height: 50%;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.MainResturantBranches-card-info h6 {
+  margin-bottom: 8px;
+}
+.MainResturantBranches-card-info p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 180%;
+  margin-bottom: 8px;
+}
+.MainResturantBranches-card-info button {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 12px;
+  background-color: transparent;
+  border: 1px solid var(--shade-2);
+  color: var(--shade-2);
+  border-radius: 4px;
+  opacity: 0;
+  height: 0;
+  transition: all 0.5s;
+  width: 128px;
+}
+.MainResturantBranches-card:hover {
+  box-shadow: 0px 16px 6px rgba(0, 0, 0, 0.01), 0px 9px 5px rgba(0, 0, 0, 0.05), 0px 4px 4px rgba(0, 0, 0, 0.09),
+    0px 1px 2px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+}
+.MainResturantBranches-card:hover .MainResturantBranches-card-img {
+  opacity: 0.5;
+}
+.MainResturantBranches-card:hover .MainResturantBranches-card-img,
+.MainResturantBranches-card:hover .MainResturantBranches-card-top {
+  height: 190px;
+  transition: all 0.5s;
+}
+.MainResturantBranches-card:hover .MainResturantBranches-card-img-icon {
+  visibility: visible;
+  transition: all 0.5s;
+}
+.MainResturantBranches-card:hover .MainResturantBranches-card-info button {
+  padding: 5px 15px;
+  opacity: 1;
+  height: auto;
+}
+@media screen and (max-width: 1024px) {
+  .MainResturantBranches-card-info h6 {
+    font-size: 16px !important;
+  }
+  .MainResturantBranches-card-info p {
+    font-size: 12px;
+  }
+  .MainResturantBranches-card-info button {
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .MainResturantBranches-card-top {
+    height: 150px;
+  }
+  .MainResturantBranches-card-img {
+    height: 150px;
+  }
+  .MainResturantBranches-card:hover .MainResturantBranches-card-img,
+  .MainResturantBranches-card:hover .MainResturantBranches-card-top {
+    height: 100px;
+    transition: all 0.5s;
+  }
+}
+@media screen and (max-width: 480px) {
+  .MainResturantBranches-cards {
+    flex-direction: column;
+  }
+  .MainResturantBranches-card {
+    height: 160px;
+    width: 100%;
+    margin: 1rem;
+    flex-direction: row;
+  }
+  .MainResturantBranches-card-top {
+    width: 40%;
+    height: 100% !important;
+  }
+  .MainResturantBranches-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 0;
+  }
+  .MainResturantBranches-card:hover .MainResturantBranches-card-top,
+  .MainResturantBranches-card:hover .MainResturantBranches-card-img {
+    height: 100%;
+    transition: all 0.5s;
+  }
+  .MainResturantBranches-card-info {
+    width: 50%;
+  }
+  .MainResturantBranches-card:hover .MainResturantBranches-card-info button {
+    padding: 0px 0px;
+    opacity: 0;
+  }
+}
