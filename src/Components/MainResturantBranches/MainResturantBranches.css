@@ -58,7 +58,7 @@
 }
 
 .MainResturantBranches-card-info {
-  height: 50%;
+  /* height: 50%; */
   padding: 8px;
   display: flex;
   flex-direction: column;
@@ -161,6 +161,7 @@
   }
   .MainResturantBranches-card-info {
     width: 50%;
+    height: auto;
   }
   .MainResturantBranches-card:hover .MainResturantBranches-card-info button {
     padding: 0px 0px;
