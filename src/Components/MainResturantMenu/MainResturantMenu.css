@@ -64,6 +64,9 @@
 }
 
 @media screen and (max-width: 480px) {
+  .MainResturantMenu h2 {
+  margin-bottom: 2rem;
+}
   .MainResturantMenu-menu-item {
     /* flex: 25%; */
   }
