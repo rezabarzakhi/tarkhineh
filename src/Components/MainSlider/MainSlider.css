@@ -30,7 +30,7 @@
   color: var(--tint1);
 }
 .swiper-pagination {
-  background: url(/src/assets/Rectangle\ 2.png);
+  background: url(/src/assets/Rectangle2.png);
   left: 50% !important;
   top: -10px;
   bottom: 0px !important;
