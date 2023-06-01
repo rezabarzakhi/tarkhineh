@@ -71,4 +71,8 @@
   }
 }
 @media screen and (max-width: 480px) {
+    .swiper-wrapper {
+    width: 350px;
+    height: 250px;
+  }
 }
