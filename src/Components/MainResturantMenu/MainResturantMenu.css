@@ -11,8 +11,8 @@
 .MainResturantMenu-menu {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
-  /* flex-wrap: wrap; */
+  justify-content: space-around;
+  flex-wrap: wrap;
   margin-top: 10rem;
   margin-bottom: 4.8rem;
 }
@@ -58,11 +58,16 @@
   z-index: -100;
 }
 @media screen and (max-width: 1024px) {
+  .MainResturantMenu-menu {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
   .MainResturantMenu-menu-item {
-    flex: 50%;
+    flex: 100%;
+    
   }
   .MainResturantMenu-menu2 {
-    width: 30%;
+    /* width: 30%; */
   }
 }
 
