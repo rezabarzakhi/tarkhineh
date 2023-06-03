@@ -1,0 +1,90 @@
+.footer {
+  /* height: 400px; */
+  /* background-size: 1440px 400px; */
+  background-position: center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/public/images/footer.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: var(--white);
+  padding: 40px;
+  gap: 100px;
+}
+
+.footer-col {
+  display: flex;
+  /* width: 50%; */
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-links,
+.footer-branches {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.footer-links h5,
+.footer-branches h5,
+.footer-col2 h5 {
+  color: var(--white);
+  margin-bottom: 16px;
+}
+.footer-branches {
+  margin-right: 100px;
+}
+.footer-li {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 180%;
+  margin-bottom: 16px;
+  padding-right: 12px;
+  cursor: pointer;
+}
+.footer-contactForm {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-contactForm-inputs {
+  display: flex;
+  flex-direction: column;
+}
+.footer-contactForm-input,
+.footer-contactForm-message button {
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid var(--gray-7);
+  margin-bottom: 12px;
+  margin-right: 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 180%;
+  font-family: "Estedad-VF";
+  padding: 12px;
+  color: var(--gray-1);
+}
+.footer-contactForm-input::placeholder {
+  color: var(--gray-1);
+}
+.footer-contactForm-message {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.footer-contactForm-message button {
+  padding: 8px 30px;
+  cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+  .footer-col2 {
+    display: none;
+  }
+  .footer-links h5,
+  .footer-branches h5 {
+    font-size: 12px !important;
+  }
+  .footer-li {
+    font-size: 10px;
+  }
+}

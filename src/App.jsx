@@ -4,6 +4,7 @@ import "./App.css";
 import Header from "./Components/Header/Header";
 import { useRoutes } from "react-router-dom";
 import routes from "./routes";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   
@@ -13,6 +14,7 @@ function App() {
     <>
       <Header />
       {router}
+      <Footer/>
     </>
   );
 }
