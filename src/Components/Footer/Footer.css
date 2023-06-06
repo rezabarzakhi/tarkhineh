@@ -1,7 +1,7 @@
 .footer {
   /* height: 400px; */
-  background-size: 1440px 400px;
-  background-position: center;
+  /* background-size: cover; */
+  /* background-position: 25% 75%; */
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/public/images/footer.jpg);
   display: flex;
   justify-content: center;
@@ -9,7 +9,8 @@
   color: var(--white);
   padding: 40px;
   gap: 100px;
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px !important;
 }
 
 .footer-col {
