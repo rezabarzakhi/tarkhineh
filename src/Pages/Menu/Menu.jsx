@@ -32,34 +32,34 @@ export default function Menu() {
       <div className="menu-foods">
         {subCategory.map((subCat, index) => (
           <div key={subCat} className="menu-category">
-            <h4 id={index}>
-              {subCat}
-            </h4>
-            {mainCategory.map((food) => {
-              if (food.category === subCat) {
-                return (
-                  <div key={food.id} className="food-card">
-                    <img src={food.img} alt={food.name} className="food-card-img" />
-                    <div className="food-card-info">
-                      <h6>{food.name}</h6>
-                      <div className="food-card-details">
-                        <p>{food.ingredients}</p>
-                        <div className="food-card-price">
-                          {food.off > 0 && (
-                            <span>
-                              <p className="food-card-off">%{food.off.toLocaleString("fa-FA")}</p>
-                              <p>{food.price.toLocaleString("fa-FA")}</p>
-                            </span>
-                          )}
-                          <p>{(food.price - (food.off * food.price) / 100).toLocaleString("fa-FA")} تومان</p>
+            <h4 id={index}>{subCat}</h4>
+            <div className="food-cards">
+              {mainCategory.map((food) => {
+                if (food.category === subCat) {
+                  return (
+                    <div key={food.id} className="food-card">
+                      <img src={food.img} alt={food.name} className="food-card-img" />
+                      <div className="food-card-info">
+                        <h6>{food.name}</h6>
+                        <div className="food-card-details">
+                          <p>{food.ingredients}</p>
+                          <div className="food-card-price">
+                            {food.off > 0 && (
+                              <span>
+                                <p className="food-card-off">%{food.off.toLocaleString("fa-FA")}</p>
+                                <p>{food.price.toLocaleString("fa-FA")}</p>
+                              </span>
+                            )}
+                            <p>{(food.price - (food.off * food.price) / 100).toLocaleString("fa-FA")} تومان</p>
+                          </div>
                         </div>
+                        <button>افزودن به سبد خرید</button>
                       </div>
-                      <button>افزودن به سبد خرید</button>
                     </div>
-                  </div>
-                );
-              }
-            })}
+                  );
+                }
+              })}
+            </div>
           </div>
         ))}
       </div>
