@@ -5,12 +5,13 @@
     linear-gradient(0deg, rgba(33, 64, 43, 0.5), rgba(33, 64, 43, 0.5)), url(/public/images/mainAbout.jpg);
   background-position: center;
   padding: 48px 108px;
+  max-width: 1440px;
 }
 
 .mainAbout-summery {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 600px;
   gap: 16px;
 }
 .mainAbout-summery-title {
@@ -44,7 +45,7 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  width: 30%;
+  width: 400px;
   /* justify-content: space-around; */
   align-items: baseline;
   /* padding: 3rem; */

@@ -3,6 +3,7 @@
   /* height: 115px; */
   margin-bottom: 1rem;
   z-index: 999999;
+  max-width: 1440px;
 }
 .header-warpper {
   display: flex;
