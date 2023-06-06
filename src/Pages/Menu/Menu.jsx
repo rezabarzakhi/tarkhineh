@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import MainSlider from "../../Components/MainSlider/MainSlider";
 import "./Menu.css";
 import { MainFoods } from "../../db";
-import { Calculator } from "iconsax-react";
 
 export default function Menu() {
   const [mainCategory, setMainCategory] = useState(MainFoods);

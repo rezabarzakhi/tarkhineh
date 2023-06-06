@@ -10,6 +10,7 @@ import {
   HambergerMenu,
 } from "iconsax-react";
 import "./NavbarMobile.css";
+import { NavLink } from "react-router-dom";
 
 export default function NavbarMobile() {
   const [isShowNavbar, setIsShowNavbar] = useState(false);
@@ -26,31 +27,31 @@ export default function NavbarMobile() {
             <CloseSquare className="mobile-navbar-close" onClick={showHandler} />
           </div>
           <ul className="mobile-navbar-ul">
-            <li className="mobile-navbar-link text-captionSM  active">
+            <NavLink to="/" className="mobile-navbar-link text-captionSM">
               <Home /> صفحه اصلی
-            </li>
-            <li className="mobile-navbar-link  dropDown">
+            </NavLink>
+            <NavLink to="/menu" className="mobile-navbar-link  dropDown">
               <div className="text-captionSM">
                 <MenuBoard /> منو
               </div>
               <ArrowDown2 />
-            </li>
-            <li className="mobile-navbar-link  dropDown">
+            </NavLink>
+            <NavLink to="/branches" className="mobile-navbar-link  dropDown">
               <div className="text-captionSM">
                 <HomeHashtag /> شعبه
               </div>
               <ArrowDown2 />
-            </li>
-            <li className="mobile-navbar-link text-captionSM">
+            </NavLink>
+            <NavLink to="/about" className="mobile-navbar-link text-captionSM">
               <Profile2User /> درباره ما
-            </li>
-            <li className="mobile-navbar-link text-captionSM">
+            </NavLink>
+            <NavLink to="/contact" className="mobile-navbar-link text-captionSM">
               <CallCalling /> تماس باما
-            </li>
+            </NavLink>
           </ul>
         </div>
       ) : (
-        <HambergerMenu className="mobile-navbar-icon" onClick={showHandler}/>
+        <HambergerMenu className="mobile-navbar-icon" onClick={showHandler} />
       )}
     </>
   );

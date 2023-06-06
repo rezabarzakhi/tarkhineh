@@ -1,15 +1,30 @@
 import React from "react";
-import "./NavbarDesktop.css"
+import { NavLink } from "react-router-dom";
+import "./NavbarDesktop.css";
 
 export default function NavbarDesktop() {
-  return <div>
-    <ul className="desktop-navbar">
-        <li className="desktop-navbar-link text-bodyXL   active">صفحه اصلی</li>
-        <li className="desktop-navbar-link text-bodyXL">شعبه</li>
-        <li className="desktop-navbar-link text-bodyXL">منو</li>
-        <li className="desktop-navbar-link text-bodyXL">اعطای نمایندگی</li>
-        <li className="desktop-navbar-link text-bodyXL">درباره ما</li>
-        <li className="desktop-navbar-link text-bodyXL">تماس باما</li>
-    </ul>
-  </div>;
+  return (
+    <div>
+      <ul className="desktop-navbar">
+        <NavLink to="/" className="desktop-navbar-link text-bodyXL">
+          صفحه اصلی
+        </NavLink>
+        <NavLink to="/branches" className="desktop-navbar-link text-bodyXL">
+          شعبه
+        </NavLink>
+        <NavLink to="/menu" className="desktop-navbar-link text-bodyXL">
+          منو
+        </NavLink>
+        <NavLink to="/getbranche" className="desktop-navbar-link text-bodyXL">
+          اعطای نمایندگی
+        </NavLink>
+        <NavLink to="/about" className="desktop-navbar-link text-bodyXL">
+          درباره ما
+        </NavLink>
+        <NavLink to="/contact" className="desktop-navbar-link text-bodyXL">
+          تماس با ما
+        </NavLink>
+      </ul>
+    </div>
+  );
 }
