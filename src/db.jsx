@@ -14,21 +14,25 @@ let MainMenu = [
   {
     id: 1,
     title: "نوشیدنی",
+    src: "/menu",
     img: "/images/Mainmenu/image.png",
   },
   {
     id: 2,
     title: "دسر",
+    src: "/menu",
     img: "/images/Mainmenu/image-1.png",
   },
   {
     id: 3,
     title: "پیش غذا",
+    src: "/menu",
     img: "/images/Mainmenu/image-2.png",
   },
   {
     id: 4,
     title: "غذای اصلی",
+    src: "/menu",
     img: "/images/Mainmenu/image-3.png",
   },
 ];

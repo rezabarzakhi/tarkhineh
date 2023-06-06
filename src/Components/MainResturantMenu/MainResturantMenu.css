@@ -18,9 +18,7 @@
   margin-top: 10rem;
   margin-bottom: 4.8rem;
 }
-
 .MainResturantMenu-menu-item {
-
   width: 380px;
   display: flex;
   flex-direction: column;
@@ -35,6 +33,12 @@
   position: relative;
   translate: 0 -50%;
 }
+.MainResturantMenu-menu a:hover .MainResturantMenu-btn,
+.MainResturantMenu-menu a:hover .MainResturantMenu-menu2 {
+  box-shadow: 0px 16px 6px rgba(0, 0, 0, 0.01), 0px 9px 5px rgba(0, 0, 0, 0.05), 0px 4px 4px rgba(0, 0, 0, 0.09),
+    0px 1px 2px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in;
+}
 .MainResturantMenu-btn {
   padding: 1rem 2rem;
   position: relative;
@@ -48,6 +52,7 @@
   line-height: 180%;
   color: var(--white);
   translate: 0 -170%;
+  cursor: pointer;
 }
 
 .MainResturantMenu-menu2 {
@@ -58,6 +63,7 @@
   height: 120px;
   padding: 8px;
   z-index: -100;
+  background: transparent;
 }
 @media screen and (max-width: 1024px) {
   .MainResturantMenu-menu {
@@ -66,7 +72,6 @@
   }
   .MainResturantMenu-menu-item {
     flex: 100%;
-    
   }
   .MainResturantMenu-menu2 {
     /* width: 30%; */
