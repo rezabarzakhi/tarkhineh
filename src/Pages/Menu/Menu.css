@@ -167,6 +167,7 @@
   .food-card {
     height: 100px;
     width: 320px;
+     margin-bottom: 0px;
   }
   .menu-mainCategorys ul {
     margin: 5px 25px;
