@@ -4,9 +4,11 @@
   margin-bottom: 1rem;
   z-index: 999999;
   max-width: 1440px;
+  width: 90%;
 }
 .header-warpper {
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
   padding: 3rem 10rem;
@@ -42,9 +44,11 @@
 @media screen and (max-width: 480px) {
   .header {
     height: 64px;
+    /* width: 100%; */
   }
-  .header-warpper {
-    padding: 2rem;
+  .header .header-warpper {
+    width: 100%;
+    padding: 2rem !important;
   }
   .logo {
     width: 102px;
@@ -73,6 +77,6 @@
 }
 @media screen and (max-width: 1024px) {
   .header .header-warpper {
-    padding: 2rem 4rem !important;
+    padding: 2rem 1rem ;
   }
 }
