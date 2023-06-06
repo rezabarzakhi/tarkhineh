@@ -58,14 +58,18 @@
 .menu-foods {
   margin: 0 10rem;
 }
-
+.food-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
 .food-card {
   width: 600px;
   /* height: 158px; */
   display: flex;
   border: 1px solid #cbcbcb;
   border-radius: 8px;
-  margin-left: 24px;
+  /* margin-left: 24px; */
   margin-bottom: 24px;
 }
 .food-card-info {
@@ -142,11 +146,17 @@
   margin: 8px 10px;
   cursor: pointer;
 }
+@media screen and (max-width: 1024px) {
+.menu-foods {
+  margin: 0 5rem;
+}
+}
 @media screen and (max-width: 480px) {
   .food-cards {
     display: flex;
     flex-direction: column;
     margin: auto;
+    gap: 12px;
   }
   .food-card {
     height: 100px;
