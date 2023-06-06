@@ -31,7 +31,6 @@ export default function MainSlider() {
             <h2 className="slider-title">{slide.title}</h2>
           </SwiperSlide>
         ))}
-        ...
       </Swiper>
     </div>
   );

@@ -1,0 +1,222 @@
+.menu-mainCategorys {
+  display: flex;
+  background-color: var(--gray-3);
+}
+.menu-mainCategorys ul {
+  display: flex;
+  margin: 0px 10rem;
+}
+.menu-mainCategorys li {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  padding: 18px;
+  color: var(--gray-7);
+  cursor: pointer;
+}
+
+.menu-mainCategorys li.active {
+  border-bottom: 2px solid var(--primery);
+  color: var(--primery);
+}
+
+.menu-category {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu-category h4 {
+  width: 100%;
+  margin-bottom: 24px;
+  margin-top: 48px;
+  /* display: inline; */
+}
+.menu-subCategorys ul {
+  display: flex;
+  margin: 18px 10rem;
+  padding-top: 17px;
+}
+.menu-subCategorys li {
+  /* font-weight: 400;
+  font-size: 16px;
+  padding: 8px 12px;
+  background-color: var(--gray-3);
+  border-radius: 64px;
+  margin-right: 8px; */
+}
+.menu-subCategorys a {
+  font-family: "Estedad-VF";
+  font-weight: 400;
+  font-size: 16px;
+  padding: 8px 12px;
+  color: var(--gray-8);
+  background-color: var(--gray-3);
+  text-decoration: none;
+  border-radius: 64px;
+  margin-right: 8px;
+}
+.menu-foods {
+  margin: 0 10rem;
+}
+
+.food-card {
+  width: 600px;
+  /* height: 158px; */
+  display: flex;
+  border: 1px solid #cbcbcb;
+  border-radius: 8px;
+  margin-left: 24px;
+  margin-bottom: 24px;
+}
+.food-card-info {
+  padding: 8px 32px 8px 8px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-end; */
+}
+.food-card-info h6 {
+  margin-bottom: 6.5px;
+  line-height: 180%;
+}
+.food-card-details {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.food-card-details p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 180%;
+  margin-left: 17px;
+}
+.food-card-price{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+.food-card-price span {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.food-card-price span p {
+  font-family: "Estedad-VF";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+  text-decoration-line: line-through;
+  color: var(--gray-5);
+}
+.food-card-price span .food-card-off {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--error);
+  text-decoration: none;
+  background-color: var(--error-extra-light);
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 12px;
+  padding: 1px 5px;
+}
+.food-card-price p {
+  width: 100%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 180%;
+}
+.food-card-info button {
+  align-self: flex-end;
+  left: 0;
+  background-color: var(--primery);
+  border: none;
+  color: var(--white);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 180%;
+  font-family: inherit;
+  border-radius: 4px;
+  padding: 5px 50px;
+  margin: 8px 10px;
+  cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+  .food-card {
+    height: 100px;
+    width: 320px;
+  }
+  .menu-mainCategorys ul {
+    margin: 5px 25px;
+  }
+  .menu-mainCategorys li {
+    font-size: 14px;
+    padding: 16px;
+  }
+  .menu-subCategorys a {
+    font-size: 10px;
+    padding: 3px 7.5px;
+  }
+  .menu-subCategorys ul {
+    margin: 10px 25px;
+    padding-top: 11px;
+  }
+  .menu-foods {
+    margin: 0 21px;
+  }
+  .menu-category h4 {
+    margin-bottom: 12px;
+    margin-top: 24px;
+    /* display: inline; */
+  }
+  .food-card-img {
+    width: 92px;
+    height: 100px;
+  }
+  .food-card-info h6 {
+    font-size: 12px !important;
+    font-weight: 400;
+    margin-bottom: 6.5px;
+    line-height: 180%;
+  }
+  .food-card-details {
+    width: 212px;
+    height: 20px;
+  }
+  .food-card-details p {
+    /* width: 50%; */
+    font-size: 10px;
+    margin-left: 8px;
+    /* padding-left: 8px; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .food-card-info {
+    padding: 8px 9px;
+  }
+  .food-card-price  {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    translate: 0px -15px;
+  }
+  .food-card-price p {
+    overflow: visible;
+  }
+  .food-card-price span .food-card-off,
+  .food-card-price span p {
+    font-size: 10px;
+    overflow: visible;
+    margin-left: 5px;
+    /* margin-right: 5px; */
+    margin-bottom: 8px;
+  }
+  .food-card-info button {
+    font-size: 10px;
+    /* translate: -8px -25px; */
+    padding: 4px 8px;
+  }
+}
