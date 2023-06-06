@@ -1,3 +1,11 @@
-/* .home {
+.home {
   max-width: 1400px;
-} */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home-slider {
+  display: block;
+  width: 10vw !important;
+}

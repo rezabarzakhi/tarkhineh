@@ -1,6 +1,7 @@
 .footer {
   /* height: 400px; */
-  /* background-size: auto; */
+  background-size: cover;
+  background-repeat: no-repeat ;
   /* background-position: 25% 75%; */
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/public/images/footer.jpg);
   display: flex;
@@ -10,7 +11,7 @@
   padding: 40px;
   gap: 100px;
   width: 100%;
-  max-width: 1440px !important;
+  /* max-width: 1440px !important; */
 }
 
 .footer-col {
