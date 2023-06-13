@@ -99,6 +99,7 @@
   margin: 16px;
   padding: 5.5px;
   border-radius: 4px;
+  cursor: pointer;
 }
 .scrollbtn {
   position: relative;
