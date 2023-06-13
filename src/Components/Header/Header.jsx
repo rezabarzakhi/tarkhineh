@@ -21,7 +21,7 @@ export default function Header() {
           <Navbar/>
         </div>
         <div className="header-logo">
-          <img src="images/Logo.png" alt="tarkhinehLogo" className="logo" />
+          <img src="/images/Logo.png" alt="tarkhinehLogo" className="logo" />
         </div>
       </div>
     </div>

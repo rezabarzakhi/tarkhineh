@@ -3,7 +3,7 @@
   right: 0;
   top: 0;
   width: 256px;
-  height: 500px;
+  height: auto;
   background-color: var(--white);
   z-index: 9999999;
 }
@@ -60,4 +60,10 @@
   cursor: pointer;
   padding: 1px;
   color: var(--primery);
+}
+.mobile-navbar-ul {
+  margin-bottom: 100px;
+}
+.dropContent {
+  margin-right: 45px;
 }
