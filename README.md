@@ -20,7 +20,7 @@ To run this website locally, you need to have Node.js and npm installed on your 
 
 - Clone this repository to your local machine 📂
 - Navigate to the project folder and run `npm install` to install the dependencies 📦
-- Run `npm start` to launch a local server and open the website in your browser 🌐
+- Run `npm run dev` to launch a local server and open the website in your browser 🌐
 - Enjoy! 😊
 
 ## Contribution 💬
