@@ -2,7 +2,6 @@
 
 This is a simple website for Tarkhineh, a Persian restaurant that serves traditional dishes and desserts. You can view the live version of the website here: https://tarkhinehresturant.netlify.app/
 
-<iframe src="https://tarkhinehresturant.netlify.app/" width="800" height="600" title="Tarkhineh Restaurant Website"></iframe>
 
 ## Features 🌟
 
