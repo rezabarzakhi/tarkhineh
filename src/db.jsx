@@ -37,53 +37,146 @@ let MainMenu = [
   },
 ];
 
-let Branches = [
+let BranchesData = [
   {
     id: "ekbatan",
+    tel : ["021-33535354" , "021-33535356"],
     title: "اکباتان",
     adress: "شهرک اکباتان، فاز ۳، مجتمع تجاری کوروش، طبقه سوم",
+    worktime: "همه روزه از ساعت ۱۲ تا ۲۳",
+    comments:[
+      {
+        username : "سردار وظیقه",
+        date : "۲۳ اسفند ۱۴۰۲",
+        img : "/images/comments/user1.png",
+        rate : 4,
+        message : "از با صفا بودن شعبه اکباتان هر چی بگم کم گفتم. بهترین غذاهای گیاهی عمرمو اینجا خوردم. از مدیریت شعبه اکباتان رستوران‌های ترخینه واقعا تشکر میکنم. " 
+      },
+      {
+        username : "آرزو محمدعلیزاده",
+        date : "۲۳ اسفند ۱۴۰۲",
+        img : "/images/comments/user2.png",
+        rate : 4,
+        message : "از با صفا بودن شعبه اکباتان هر چی بگم کم گفتم. بهترین غذاهای گیاهی عمرمو اینجا خوردم. از مدیریت شعبه اکباتان رستوران‌های ترخینه واقعا تشکر میکنم. " 
+      },
+      {
+        username : "سردار وظیقه",
+        date : "۲۳ اسفند ۱۴۰۲",
+        img : "/images/comments/user1.png",
+        rate : 4,
+        message : "از با صفا بودن شعبه اکباتان هر چی بگم کم گفتم. بهترین غذاهای گیاهی عمرمو اینجا خوردم. از مدیریت شعبه اکباتان رستوران‌های ترخینه واقعا تشکر میکنم. " 
+      },
+      {
+        username : "آرزو محمدعلیزاده",
+        date : "۲۳ اسفند ۱۴۰۲",
+        img : "/images/comments/user2.png",
+        rate : 4,
+        message : "از با صفا بودن شعبه اکباتان هر چی بگم کم گفتم. بهترین غذاهای گیاهی عمرمو اینجا خوردم. از مدیریت شعبه اکباتان رستوران‌های ترخینه واقعا تشکر میکنم. " 
+      },
+    ],
     images: [
-      "images/branches/ekbatan/ekbatan (1).jpg",
-      "images/branches/ekbatan/ekbatan (2).jpg",
-      "images/branches/ekbatan/ekbatan (3).jpg",
-      "images/branches/ekbatan/ekbatan (4).jpg",
-      "images/branches/ekbatan/ekbatan (5).jpg",
+      "/images/branches/ekbatan/ekbatan (1).jpg",
+      "/images/branches/ekbatan/ekbatan (2).jpg",
+      "/images/branches/ekbatan/ekbatan (3).jpg",
+      "/images/branches/ekbatan/ekbatan (4).jpg",
+      "/images/branches/ekbatan/ekbatan (5).jpg",
     ],
   },
   {
     id: "chalous",
+    tel : ["021-33535354" , "021-33535356"],
     title: "چالوس",
     adress: "چالوس، خیابان ۱۷ شهریور، بعد کوچه کوروش، جنب داروخانه دکتر میلانی",
+    worktime: "همه روزه از ساعت ۱۲ تا ۲۳",
+    comments:[
+      {
+        username : "سردار وظیقه",
+        date : "۲۳ اسفند ۱۴۰۲",
+        img : "/images/comments/user1.png",
+        rate : 4,
+        message : "از با صفا بودن شعبه اکباتان هر چی بگم کم گفتم. بهترین غذاهای گیاهی عمرمو اینجا خوردم. از مدیریت شعبه اکباتان رستوران‌های ترخینه واقعا تشکر میکنم. " 
+      },
+      {
+        username : "آرزو محمدعلیزاده",
+        date : "۲۳ اسفند ۱۴۰۲",
+        img : "/images/comments/user2.png",
+        rate : 4,
+        message : "از با صفا بودن شعبه اکباتان هر چی بگم کم گفتم. بهترین غذاهای گیاهی عمرمو اینجا خوردم. از مدیریت شعبه اکباتان رستوران‌های ترخینه واقعا تشکر میکنم. " 
+      }
+    ],
     images: [
-      "images/branches/chalous/chalous (1).jpg",
-      "images/branches/chalous/chalous (2).jpg",
-      "images/branches/chalous/chalous (3).jpg",
-      "images/branches/chalous/chalous (4).jpg",
-      "images/branches/chalous/chalous (5).jpg",
+      "/images/branches/chalous/chalous (1).jpg",
+      "/images/branches/chalous/chalous (2).jpg",
+      "/images/branches/chalous/chalous (3).jpg",
+      "/images/branches/chalous/chalous (4).jpg",
+      "/images/branches/chalous/chalous (5).jpg",
     ],
   },
   {
     id: "aghdasieh",
+    tel : ["021-33535354" , "021-33535356"],
     title: "اقدسیه",
     adress: "خیابان اقدسیه ، نرسیده به میدان خیام، پلاک ۸",
+    worktime: "همه روزه از ساعت ۱۲ تا ۲۳",
+    comments:[
+      {
+        username : "سردار وظیقه",
+        date : "۲۳ اسفند ۱۴۰۲",
+        img : "/images/comments/user1.png",
+        rate : 4,
+        message : "از با صفا بودن شعبه اکباتان هر چی بگم کم گفتم. بهترین غذاهای گیاهی عمرمو اینجا خوردم. از مدیریت شعبه اکباتان رستوران‌های ترخینه واقعا تشکر میکنم. " 
+      },
+      {
+        username : "آرزو محمدعلیزاده",
+        date : "۲۳ اسفند ۱۴۰۲",
+        img : "/images/comments/user2.png",
+        rate : 4,
+        message : "از با صفا بودن شعبه اکباتان هر چی بگم کم گفتم. بهترین غذاهای گیاهی عمرمو اینجا خوردم. از مدیریت شعبه اکباتان رستوران‌های ترخینه واقعا تشکر میکنم. " 
+      }
+    ],
     images: [
-      "images/branches/aghdasieh/aghdasieh (1).jpg",
-      "images/branches/aghdasieh/aghdasieh (2).jpg",
-      "images/branches/aghdasieh/aghdasieh (3).jpg",
-      "images/branches/aghdasieh/aghdasieh (4).jpg",
-      "images/branches/aghdasieh/aghdasieh (5).jpg",
+      "/images/branches/aghdasieh/aghdasieh (1).jpg",
+      "/images/branches/aghdasieh/aghdasieh (2).jpg",
+      "/images/branches/aghdasieh/aghdasieh (3).jpg",
+      "/images/branches/aghdasieh/aghdasieh (4).jpg",
+      "/images/branches/aghdasieh/aghdasieh (5).jpg",
     ],
   },
   {
     id: "vanak",
+    tel : ["021-33535354" , "021-33535356"],
     title: "ونک",
     adress: "میدان ونک، خیابان فردوسی، نبش کوچه نیلوفر، پلاک ۲۶",
+    worktime: "همه روزه از ساعت ۱۲ تا ۲۳",
+    comments:[
+      {
+        username : "سردار وظیقه",
+        date : "۲۳ اسفند ۱۴۰۲",
+        img : "/images/comments/user1.png",
+        rate : 4,
+        message : "از با صفا بودن شعبه اکباتان هر چی بگم کم گفتم. بهترین غذاهای گیاهی عمرمو اینجا خوردم. از مدیریت شعبه اکباتان رستوران‌های ترخینه واقعا تشکر میکنم. " 
+      },
+      {
+        username : "آرزو محمدعلیزاده",
+        date : "۲۳ اسفند ۱۴۰۲",
+        img : "/images/comments/user2.png",
+        rate : 4,
+        message : "از با صفا بودن شعبه اکباتان هر چی بگم کم گفتم. بهترین غذاهای گیاهی عمرمو اینجا خوردم. از مدیریت شعبه اکباتان رستوران‌های ترخینه واقعا تشکر میکنم. " 
+      },
+      {
+        username : "آرزو محمدعلیزاده",
+        date : "۲۳ اسفند ۱۴۰۲",
+        img : "/images/comments/user2.png",
+        rate : 4,
+        message : "از با صفا بودن شعبه اکباتان هر چی بگم کم گفتم. بهترین غذاهای گیاهی عمرمو اینجا خوردم. از مدیریت شعبه اکباتان رستوران‌های ترخینه واقعا تشکر میکنم. " 
+      }
+    ],
     images: [
-      "images/branches/vanak/vanak (1).jpg",
-      "images/branches/vanak/vanak (2).jpg",
-      "images/branches/vanak/vanak (3).jpg",
-      "images/branches/vanak/vanak (4).jpg",
-      "images/branches/vanak/vanak (5).jpg",
+      "/images/branches/vanak/vanak (1).jpg",
+      "/images/branches/vanak/vanak (2).jpg",
+      "/images/branches/vanak/vanak (3).jpg",
+      "/images/branches/vanak/vanak (4).jpg",
+      "/images/branches/vanak/vanak (5).jpg",
     ],
   },
 ];
@@ -235,4 +328,4 @@ let MainFoods = [
   },
 ];
 
-export { MainSlide, Branches, MainMenu, MainFoods };
+export { MainSlide, BranchesData, MainMenu, MainFoods };

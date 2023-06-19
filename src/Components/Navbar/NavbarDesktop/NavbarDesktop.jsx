@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { Branches } from "../../../db";
+import { BranchesData } from "../../../db";
 import "./NavbarDesktop.css";
 
 export default function NavbarDesktop() {
@@ -10,16 +10,16 @@ export default function NavbarDesktop() {
         <NavLink to="/" className="desktop-navbar-link text-bodyXL">
           صفحه اصلی
         </NavLink>
-        <NavLink to="#" className="desktop-navbar-link text-bodyXL dropdown ">
+        <div to="#" className="desktop-navbar-link text-bodyXL dropdown ">
           شعبه
           <div className="dropdown-content">
-            {Branches.map((branch) => (
+            {BranchesData.map((branch) => (
               <NavLink className="text-bodyXL" key={branch.id} to={`/branches/${branch.id}`}>
                 {branch.title}
               </NavLink>
             ))}
           </div>
-        </NavLink>
+        </div>
         <NavLink to="/menu" className="desktop-navbar-link text-bodyXL">
           منو
         </NavLink>

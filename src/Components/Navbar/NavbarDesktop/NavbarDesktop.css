@@ -6,7 +6,7 @@
   color: var(--gray-7);
 }
 
-.desktop-navbar-link.active {
+.desktop-navbar-link.active ,.desktop-navbar-link:hover  {
   font-weight: 700;
   color: var(--primery);
 }
@@ -32,6 +32,7 @@
   /* margin-right: 2.4rem; */
   color: var(--gray-7);
 }
+
 .dropdown:hover .dropdown-content {
   display: block;
 }

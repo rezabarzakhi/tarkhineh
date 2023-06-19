@@ -1,5 +1,5 @@
 import React from "react";
-import { Branches } from "../../db";
+import { BranchesData } from "../../db";
 import "./Footer.css";
 export default function Footer() {
   return (
@@ -16,7 +16,7 @@ export default function Footer() {
         <div className="footer-branches">
           <h5>شعبه های ترخینه</h5>
           <ul>
-            {Branches.map((branch) => (
+            {BranchesData.map((branch) => (
               <li key={branch.id} className="footer-li">
                 {branch.title}
               </li>

@@ -11,3 +11,128 @@
   flex-direction: column;
   align-items: flex-start;
 }
+.branchSlider {
+  width: 100vw;
+  max-width: 1440px;
+  height: 336px;
+  background: #000;
+}
+.branchSlider img {
+  width: 100%;
+  height: 336px;
+  object-fit: cover;
+  object-position: center;
+  -webkit-filter: grayscale(10%);
+  filter: grayscale(10%);
+  opacity: 0.5;
+}
+
+.branchDataCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.branchDataCard h4 {
+  margin-bottom: 18px;
+}
+.branchDataCard-info {
+  display: flex;
+  position: relative;
+  top: -40px;
+  /* align-items: ; */
+  justify-content: space-between;
+  width: 60%;
+  z-index: 99999999;
+  background: #ffffff;
+  border: 3px solid #417f56;
+  border-radius: 8px;
+  padding: 16px 48px;
+}
+.branchDataCard-info-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: #353535;
+  text-align: center;
+}
+.branchDataCard-info-detail p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+}
+.brancheComents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  padding-right: 108px;
+  padding-bottom: 40px;
+}
+.branchComentsRow {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  padding-bottom: 40px;
+  /* overflow-x: scroll; */
+}
+.brancheComentsCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 600px !important;
+  padding: 24px 32px;
+  border: 1px solid var(--gray-4);
+  border-radius: 8px;
+  margin-left: 24px;
+  flex: none;
+}
+.brancheComentsCard .swiper-pagination {
+ margin-top: 100px;
+}
+.brancheComentsCardInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.brancheComentsCardInfo img {
+  width: 96px;
+  height: 96px;
+  margin-bottom: 8px;
+}
+.brancheComentsCardInfo p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 180%;
+  color: var(--gray-7);
+  white-space: nowrap;
+}
+.brancheComentsCardMessage {
+  display: flex;
+  flex-direction: column;
+}
+.brancheComentsCardMessage p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+  margin-right: 13px;
+  text-align: justify;
+}
+.brancheComentsCardRate {
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+  gap: 4px;
+  font-weight: 500!important;
+  font-size: 16px;
+  line-height: 180%;
+  left: 0;
+  bottom: 0;
+  margin-top: 20px;
+}
+.brancheComentsCardRate .star {
+  color: gold;
+  width: 16px;
+  height: 16px;
+}

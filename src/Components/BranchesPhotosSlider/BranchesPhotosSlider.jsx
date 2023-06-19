@@ -7,7 +7,7 @@ import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import "./BranchesPhotosSlider.css";
 
-import { Branches } from "../../db";
+import { BranchesData } from "../../db";
 import { CloseSquare } from "iconsax-react";
 
 export default function BranchesPhotosSlider({setIsShowSlider , sliderBranchID}) {
@@ -24,12 +24,12 @@ export default function BranchesPhotosSlider({setIsShowSlider , sliderBranchID})
         thumbs={{ swiper: thumbsSwiper }}
         modules={[FreeMode, Navigation, Thumbs]}
         className="BranchesPhotosSlider-photos">
-        {Branches[sliderBranchID].images.map((img, index) => (
+        {BranchesData[sliderBranchID].images.map((img, index) => (
           <SwiperSlide key={index}>
             <img src={img} />
           </SwiperSlide>
         ))}
-        <CloseSquare className="BranchesPhotosSlider-close" onClick={()=>setIsShowSlider(false)}/>
+        <CloseSquare className="BranchesPhotosSlider-close" onClick={() => setIsShowSlider(false)} />
       </Swiper>
       <Swiper
         onSwiper={setThumbsSwiper}
@@ -39,7 +39,7 @@ export default function BranchesPhotosSlider({setIsShowSlider , sliderBranchID})
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}
         className="BranchesPhotosSlider-tumbs">
-        {Branches[1].images.map((img, index) => (
+        {BranchesData[1].images.map((img, index) => (
           <SwiperSlide key={index}>
             <img src={img} />
           </SwiperSlide>

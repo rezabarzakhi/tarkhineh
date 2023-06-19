@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Branches } from "../../db";
+import { BranchesData } from "../../db";
 import { Gallery } from "iconsax-react";
 import "./MainResturantBranches.css";
 import BranchesPhotosSlider from "../BranchesPhotosSlider/BranchesPhotosSlider";
@@ -23,7 +23,7 @@ export default function MainResturantBranches() {
       <div className="MainResturantBranches">
         <h4 className="MainResturantBranches-title">ترخینه گردی</h4>
         <div className="MainResturantBranches-cards">
-          {Branches.map((branche, index) => (
+          {BranchesData.map((branche, index) => (
             <div key={branche.id} className="MainResturantBranches-card">
               <div className="MainResturantBranches-card-top" onClick={() => handleShowSlider(index)}>
                 <img src={branche.images[1]} alt="" className="MainResturantBranches-card-img" />

@@ -11,7 +11,7 @@ import {
 } from "iconsax-react";
 import "./NavbarMobile.css";
 import { NavLink } from "react-router-dom";
-import { Branches } from "../../../db";
+import { BranchesData } from "../../../db";
 export default function NavbarMobile() {
   const [isShowNavbar, setIsShowNavbar] = useState(false);
 
@@ -32,7 +32,7 @@ export default function NavbarMobile() {
             <CloseSquare className="mobile-navbar-close" onClick={showHandler} />
           </div>
           <ul className="mobile-navbar-ul">
-            <NavLink to="/" className="mobile-navbar-link text-captionSM" onClick={showHandler} >
+            <NavLink to="/" className="mobile-navbar-link text-captionSM" onClick={showHandler}>
               <Home /> صفحه اصلی
             </NavLink>
             <NavLink to="/menu" className="mobile-navbar-link  dropDown" onClick={showHandler}>
@@ -49,8 +49,12 @@ export default function NavbarMobile() {
             </NavLink>
             {isDropdownOpen && (
               <>
-                {Branches.map((branch) => (
-                  <NavLink className="mobile-navbar-link text-captionSM dropContent" key={branch.id} to={`/branches/${branch.id}`} onClick={showHandler}>
+                {BranchesData.map((branch) => (
+                  <NavLink
+                    className="mobile-navbar-link text-captionSM dropContent"
+                    key={branch.id}
+                    to={`/branches/${branch.id}`}
+                    onClick={showHandler}>
                     {branch.title}
                   </NavLink>
                 ))}
@@ -64,7 +68,7 @@ export default function NavbarMobile() {
             </NavLink>
           </ul>
         </div>
-      ) : ( 
+      ) : (
         <HambergerMenu className="mobile-navbar-icon" onClick={showHandler} />
       )}
     </>
