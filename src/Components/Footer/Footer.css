@@ -81,7 +81,7 @@
 }
 @media screen and (max-width: 480px) {
   .footer {
-    width: auto;
+    /* width: auto; */
   }
   .footer-col2 {
     display: none;
