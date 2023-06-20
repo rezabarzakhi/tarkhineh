@@ -137,3 +137,47 @@
   width: 16px;
   height: 16px;
 }
+@media screen and (max-width:480px) {
+  .branchDataCard-info{
+    width: 320px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 8px;
+  }
+.branchDataCard-info-detail {
+  flex-direction: row ;
+  margin-bottom: 8px;
+}
+.branchDataCard-info-detail.icon {
+  width: 16px!important;
+  height: 16px !important;
+}
+
+.branchDataCard-info-detail p {
+  font-size: 10px;
+  text-align: start;
+}
+.brancheComents {
+  padding-right: 20px;
+}
+.brancheComentsCard {
+  width: 252px !important;
+  height: 150px ;
+  padding: 20px 16px;
+}
+.brancheComentsCard p {
+  font-size: 10px;
+}
+.brancheComentsCardInfo img{
+  width: 56px;
+  height: 56px;
+}
+.brancheComentsCardMessage p {
+  padding:  8px 0 ;
+}
+.brancheComentsCardRate {
+  margin-top: 0px;
+  padding: 0px !important;
+}
+
+}

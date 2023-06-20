@@ -52,21 +52,21 @@ export default function Branches() {
         <Swiper navigation={true} modules={[Navigation]} className="branchSlider">
           {branchData.images.map((img, index) => (
             <SwiperSlide key={index}>
-              <img src={img} alt="" />
+              <img src={img} alt="" loading="lazy" />
             </SwiperSlide>
           ))}
         </Swiper>
         <div className="branchDataCard-info">
           <div className="branchDataCard-info-detail">
-            <CallCalling />
+            <CallCalling className="icon" />
             <p>{branchData.tel}</p>
           </div>
           <div className="branchDataCard-info-detail">
-            <Location />
+            <Location className="icon" />
             <p>{branchData.adress}</p>
           </div>
           <div className="branchDataCard-info-detail">
-            <Clock />
+            <Clock className="icon" />
             <p>{branchData.worktime}</p>
           </div>
         </div>
@@ -74,7 +74,6 @@ export default function Branches() {
           <h4>نظرات کاربران</h4>
           <Swiper
             slidesPerView={2}
-            spaceBetween={30}
             pagination={{
               clickable: true,
             }}
@@ -83,7 +82,7 @@ export default function Branches() {
             {branchData.comments.map((coment, index) => (
               <SwiperSlide key={index} className="brancheComentsCard">
                 <div className="brancheComentsCardInfo">
-                  <img src={coment.img} alt="" />
+                  <img src={coment.img} alt="" loading="lazy" />
                   <p>{coment.username}</p>
                   <p>{coment.date}</p>
                 </div>
