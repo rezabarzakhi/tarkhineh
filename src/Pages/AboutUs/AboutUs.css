@@ -1,0 +1,124 @@
+.About {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  max-width: 1440px;
+}
+.AboutHead {
+  width: 100vw;
+  height: 400px;
+  background: #000;
+  text-align: center;
+}
+.AboutHead img {
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
+  object-position: center;
+  -webkit-filter: grayscale(10%);
+  filter: grayscale(10%);
+  opacity: 0.5;
+}
+.AboutHead h2 {
+  position: relative;
+  top: -220px;
+  color: var(--white);
+}
+.AboutTitle {
+  display: flex;
+  align-self: self-start;
+  padding: 48px 100px 24px 0;
+  color: var(--gray-8);
+}
+.AboutBody {
+  width: 100%;
+  /* display: flex; */
+  flex-direction: row-reverse;
+  padding: 0px 100px 48px 100px;
+}
+.AboutBody p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  color: var(--gray-7);
+}
+.AboutImg {
+  float: left;
+}
+.AboutImg img {
+  width: 600px;
+  height: 492px;
+  margin: 6px 24px 6px 0px;
+  border-radius: 8px;
+}
+.AboutFeatures {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 100px;
+  width: 100%;
+  background-color: var(--gray-3);
+}
+.AboutFeaturesItems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+.AboutFeaturesItems .Icon {
+  width: 48px;
+  height: 48px;
+}
+.AboutFeaturesItems p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 180%;
+  color: var(--gray-7);
+  text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .AboutHead {
+    height: 200px;
+  }
+  .AboutHead h2 {
+    top: -110px;
+    font-size: 16px !important;
+  }
+  .AboutTitle {
+    padding: 16px 20px 4px 0;
+    font-size: 16px !important;
+  }
+  .AboutBody {
+    display: block;
+    padding: 0 20px 24px 20px;
+  }
+  .AboutBody p {
+    font-size: 10px;
+    line-height: 18px;
+    text-align: justify;
+  }
+  .AboutImg {
+    float: left;
+  }
+  .AboutImg img {
+    width: 152px;
+    height: 120px;
+    margin: 0 16px 6px 0;
+  }
+  .AboutFeatures {
+    padding: 12px 20px;
+    gap: 10px;
+  }
+  .AboutFeaturesItems {
+    margin: 12px 0;
+  }
+  .AboutFeaturesItems .Icon {
+    width: 16px;
+    height: 16px;
+  }
+  .AboutFeaturesItems p {
+    font-size: 10px;
+  }
+}
